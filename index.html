@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios 1</title>
+</head>
+<body>
+    <h1>Formularios HTML</h1>
+    <form action="mailto:veronb79@gmail.com" method="POST">
+        <div>
+            <label>
+                Nombre
+                <br>
+                <input type="text" name="nombre">    <!--campo que el usuario va a llenar le tenes que decir que tipo de dato va a poner--> 
+                <button type="submit">Envia info</button>  <!--un solo boton por formulario-->
+        </div>
+        <div>
+            <label for="campoFecha">Fecha
+
+            </label>
+            <input type="date"name="fecha" id="campoFecha">
+        </div>
+        <div>
+            Género
+            <label>
+               Femenino
+               <input type="radio" name="genero" value="f">
+            </label>
+            <label>
+                Masculino
+                <input type="radio" name="genero" value="m">
+            </label>
+                No binario
+                <input type="radio" name="genero" value="nb">
+        </div>
+    <div>
+        <label for="campoEmail">Email</label>
+        <br>
+        <input type="email"name="email" id="campoEmail">
+    </div>
+    </label>
+   
+    <label>
+    <!--provincia-->
+      Provincia
+       <select name="provincia">
+        <option value="1">BUENOS AIRES</option>
+        <option value="2">CATAMARCA</option>
+        <option value="5">CHACO</option>
+        <option value="6">CHUBUT</option>
+        <option value="50">CIUDAD AUTONOMA DE Bs As</option>
+        <option value="3">CORDOBA</option>
+        <option value="4">CORRIENTES</option>
+        <option value="7">ENTRE RIOS</option>
+        <option value="8">FORMOSA</option>
+        <option value="9">JUJUY</option>
+        <option value="10">LA PAMPA</option>
+        <option value="11">LA RIOJA</option>
+        <option value="12">MENDOZA</option>
+        <option value="13">MISIONES</option>
+        <option value="14">NEUQUEN</option>
+        <option value="15">RIO NEGRO</option>
+        <option value="16">SALTA</option>
+        <option value="17">SAN LUIS</option>
+        <option value="19">SANTA CRUZ</option>
+        <option value="20">SANTA FE</option>
+        <option value="21">SANTIAGO DEL ESTERO</option>
+        <option value="22">TIERRA DEL FUEGO</option>
+        <option disabled="true" selected="true" value=""> Provincia</option>
+    </select>
+        </label>
+    </form> <!--Aca va el tipo de accion que se llevara a cabo (enviar mail)-->
+     <div>
+        <label>
+        <input type="checkbox" name="permiso">
+        Acepto los terminos y condiciones del sitio.
+    </label>
+    </div>
+
+</body>
+</html>
